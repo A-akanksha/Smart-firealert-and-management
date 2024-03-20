@@ -12,7 +12,13 @@ import { get, ref } from "firebase/database";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
-const Map = ({ latitude, longitude }) => {
+interface MapProps {
+  latitude: number;
+  longitude: number;
+}
+
+
+const Map: React.FC<MapProps> = ({ latitude, longitude }) => {
   return (
     <MapContainer center={[latitude, longitude]} zoom={13} style={{ height: "400px", width: "100%" }}>
       <TileLayer
@@ -70,7 +76,7 @@ export default function Home() {
             <div className="temp"><h3>Temperature</h3><span id="temp"> : {data.temperature}</span></div>
             <div className="humidity"><h3>Humidity</h3><span id="humidity"> : {data.humidity}</span></div>
         </div>
-        <Map latitude={data.latitude} longitude={data.longitude} />
+        <Map latitude={data.latitude} longitude={data.longitude} /> 
         
     </div>
       </> : <>

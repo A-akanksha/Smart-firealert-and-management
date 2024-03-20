@@ -45,7 +45,7 @@ font-size: 60px;
 }
 .dht{
   margin-top: 5px;
-  margin-left: 50px;
+  margin-left: 30px;
   height: 65vh;
   width: 300px;
   border: 3px solid black;
@@ -64,7 +64,8 @@ font-size: 60px;
   padding: 5px;
   font-size: larger;
   margin-top: 50px;
-  margin-left: 40px;
+  margin-left: 20px;
+  margin-right: 10px;
   height: 100px;
   width: 200px;
   border: 1px solid #000;
@@ -75,13 +76,14 @@ font-size: 60px;
   padding: 5px;
   font-size: larger;
   margin-top: 50px;
-  margin-left: 40px;
+  margin-left: 20px;
+  margin-right: 10px;
   height: 100px;
   width: 200px;
   border: 1px solid #000;
   border-radius: 5%;
 }
-#map{
+.map{
   height:65vh;
   width: 600px;
   margin-right: 30px;
